@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Litter
+  - DepositZone
+  - NPC
   layers:
   - Default
   - TransparentFX
@@ -40,4 +43,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Dialogue Panel
+    uniqueID: 3856194241
+    locked: 0
+  - name: Characters
+    uniqueID: 2628574089
+    locked: 0
+  - name: Litter
+    uniqueID: 2287098655
     locked: 0
