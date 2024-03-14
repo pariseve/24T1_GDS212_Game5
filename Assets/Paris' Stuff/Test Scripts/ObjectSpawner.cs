@@ -22,7 +22,7 @@ public class ObjectSpawner : MonoBehaviour
             // Generate a random position within the spawn area
             Vector3 spawnPosition = new Vector3(
                 Random.Range(-spawnAreaSize.x / 2f, spawnAreaSize.x / 2f),
-                0f,
+                0.2f,
                 Random.Range(-spawnAreaSize.z / 2f, spawnAreaSize.z / 2f)
             );
 
@@ -30,4 +30,5 @@ public class ObjectSpawner : MonoBehaviour
             Instantiate(objectToSpawn, spawnPosition, Quaternion.identity);
         }
     }
+
 }
