@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 1df8b0d0322b641aeac888c0590219d6
+  - enabled: 1
+    path: Assets/Scenes/Character Selection.unity
+    guid: 03d29cff53399443fbd2570a59618c14
+  - enabled: 1
+    path: Assets/Scenes/LeylaTest.unity
+    guid: 4073cdc1ef59647ae8b55072aa89c96b
   m_configObjects: {}
