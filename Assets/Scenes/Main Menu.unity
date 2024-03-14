@@ -1963,9 +1963,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2078987049}
     - target: {fileID: 1255836418676292297, guid: 78e53d8b0ac094fa6afdc9203c472b74, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1255836418676292297, guid: 78e53d8b0ac094fa6afdc9203c472b74, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1554743441}
+    - target: {fileID: 1255836418676292297, guid: 78e53d8b0ac094fa6afdc9203c472b74, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnVolumeChanged
+      objectReference: {fileID: 0}
     - target: {fileID: 3441300175646358386, guid: 78e53d8b0ac094fa6afdc9203c472b74, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2049,6 +2057,10 @@ PrefabInstance:
     - target: {fileID: 5168452053558386892, guid: 78e53d8b0ac094fa6afdc9203c472b74, type: 3}
       propertyPath: m_Name
       value: Options Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472699077429283164, guid: 78e53d8b0ac094fa6afdc9203c472b74, type: 3}
+      propertyPath: m_TagString
+      value: VolumeSlider
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

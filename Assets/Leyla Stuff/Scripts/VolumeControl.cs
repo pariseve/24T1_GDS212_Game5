@@ -5,12 +5,12 @@ public class VolumeControl : MonoBehaviour
 {
     public Slider volumeSlider; // Reference to the volume slider in the Inspector
 
-    private void Start()
+    void Start()
     {
         LoadVolumeSettings();
     }
 
-    private void LoadVolumeSettings()
+    void LoadVolumeSettings()
     {
         // Load volume settings from PlayerPrefs if available
         if (PlayerPrefs.HasKey("Volume"))
@@ -28,7 +28,7 @@ public class VolumeControl : MonoBehaviour
         }
     }
 
-    private void SaveVolumeSettings(float volume)
+    void SaveVolumeSettings(float volume)
     {
         // Save volume setting
         PlayerPrefs.SetFloat("Volume", volume);
@@ -36,12 +36,12 @@ public class VolumeControl : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    private void OnApplicationQuit()
+    void OnApplicationQuit()
     {
         SaveVolumeSettings(volumeSlider.value);
     }
 
-    private void OnApplicationPause(bool pauseStatus)
+    void OnApplicationPause(bool pauseStatus)
     {
         if (pauseStatus)
         {
@@ -69,6 +69,7 @@ public class VolumeControl : MonoBehaviour
         }
     }
 }
+
 
 
 
