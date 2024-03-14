@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 1f;
+    public float initialMoveSpeed = 1f; // Initial move speed set in the inspector
+    private float moveSpeed; // Current move speed
     private Animator[] childAnimators; // Array to hold all Animator components in children
     private Vector3 lastMovementDirection = Vector3.right; // Default direction
 
@@ -10,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
     {
         // Get all Animator components in children
         childAnimators = GetComponentsInChildren<Animator>();
+
+        // Set the current move speed to the initial move speed
+        moveSpeed = initialMoveSpeed;
     }
 
     void Update()
@@ -43,7 +47,21 @@ public class PlayerMovement : MonoBehaviour
         // Move the player
         transform.Translate(movementDirection * moveSpeed * Time.deltaTime);
     }
+
+    public void FreezeMovement()
+    {
+        // Stop player movement
+        moveSpeed = 0f;
+    }
+
+    public void UnfreezeMovement()
+    {
+        // Resume player movement
+        moveSpeed = initialMoveSpeed;
+    }
 }
+
+
 
 
 

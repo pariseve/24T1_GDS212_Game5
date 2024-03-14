@@ -1,4 +1,3 @@
-// OptionsMenu.cs
 using UnityEngine;
 
 public class OptionsMenu : MonoBehaviour
@@ -7,17 +6,29 @@ public class OptionsMenu : MonoBehaviour
 
     private void Start()
     {
-        optionsPanel.SetActive(false);
+        CloseOptions(); // Ensure the options panel is initially closed
+    }
+
+    private void Update()
+    {
+        // Check for Escape key press to toggle options menu
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ToggleOptions();
+        }
     }
 
     public void ToggleOptions()
     {
+        // Toggle the visibility of the options panel
         optionsPanel.SetActive(!optionsPanel.activeSelf);
     }
 
     public void CloseOptions()
     {
+        // Close the options panel
         optionsPanel.SetActive(false);
     }
 }
+
 

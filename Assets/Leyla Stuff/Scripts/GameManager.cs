@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1f;
         // Retrieve the selected character index from PlayerPrefs
         int selectedCharacterIndex = PlayerPrefs.GetInt("SelectedCharacterIndex", 0);
 
