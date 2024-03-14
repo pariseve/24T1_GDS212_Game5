@@ -331,6 +331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemHolder: {fileID: 4188147804768247985}
   depositLocationPrefab: {fileID: 1776357966266806995, guid: c8f5ae67ef0d41040bdad6aa46bc2f55, type: 3}
+  allTrashRemoved: {fileID: 3123130739611069922, guid: e949abd0ffd3a564d89298ea433c80a9, type: 3}
 --- !u!1 &4063719076688186148
 GameObject:
   m_ObjectHideFlags: 0
