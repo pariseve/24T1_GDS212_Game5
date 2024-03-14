@@ -5,10 +5,18 @@ using UnityEngine;
 public class TrashCollection : MonoBehaviour
 {
     public Transform itemHolder; // The empty GameObject attached to the player character to hold items
-    public Transform depositLocation; // The location where items will be deposited
+    public GameObject depositLocationPrefab; // The prefab of the deposit location
 
+    private GameObject depositLocationInstance; // The instantiated deposit location object
     private GameObject itemHeld; // The item currently held by the player
     private bool isNearDeposit; // Flag to track if the player is near the deposit location
+
+    void Start()
+    {
+        // Instantiate the deposit location prefab
+        depositLocationInstance = Instantiate(depositLocationPrefab, transform.position, Quaternion.identity);
+        depositLocationInstance.SetActive(false); // Deactivate the deposit location initially
+    }
 
     void Update()
     {
@@ -53,7 +61,7 @@ public class TrashCollection : MonoBehaviour
         {
             // Deposit the held item at the deposit location
             itemHeld.transform.SetParent(null); // Release the item from the player
-            itemHeld.transform.position = depositLocation.position; // Move the item to the deposit location
+            itemHeld.transform.position = depositLocationInstance.transform.position; // Move the item to the deposit location
             itemHeld.GetComponent<Rigidbody>().isKinematic = false; // Make the item non-kinematic to enable physics interactions
             itemHeld.GetComponent<Collider>().isTrigger = false; // Set the collider as not a trigger to enable physics interactions
             Destroy(itemHeld); // Destroy the deposited item
@@ -66,6 +74,7 @@ public class TrashCollection : MonoBehaviour
         if (other.CompareTag("DepositZone"))
         {
             isNearDeposit = true;
+            depositLocationInstance.SetActive(true); // Activate the deposit location when near the zone
         }
     }
 
@@ -74,6 +83,7 @@ public class TrashCollection : MonoBehaviour
         if (other.CompareTag("DepositZone"))
         {
             isNearDeposit = false;
+            depositLocationInstance.SetActive(false); // Deactivate the deposit location when leaving the zone
         }
     }
 }

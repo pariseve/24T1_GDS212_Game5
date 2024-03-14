@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 310527922575357859}
   serializedVersion: 2
   m_LocalRotation: {x: 0.15419307, y: -0, z: -0, w: 0.98804075}
-  m_LocalPosition: {x: -0.026207145, y: 0.51900005, z: -1.1760001}
+  m_LocalPosition: {x: -0.026207088, y: 0.519, z: -1.1759999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -227,9 +227,10 @@ GameObject:
   - component: {fileID: 4232851420172731726}
   - component: {fileID: 4915658927885457173}
   - component: {fileID: 7186874522777001024}
+  - component: {fileID: 7911771559664630176}
   m_Layer: 0
   m_Name: Carlos The Penguin
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -250,6 +251,7 @@ Transform:
   - {fileID: 1264319457226375732}
   - {fileID: 5626474515334748841}
   - {fileID: 4683484037368786964}
+  - {fileID: 4188147804768247985}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &4232851420172731726
@@ -315,6 +317,20 @@ CapsuleCollider:
   m_Height: 0.20074606
   m_Direction: 1
   m_Center: {x: -0.013944626, y: 0.000116586685, z: 0}
+--- !u!114 &7911771559664630176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3737656704060793957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e3fcdd0402ffad47bed98abacfface9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemHolder: {fileID: 4188147804768247985}
+  depositLocationPrefab: {fileID: 1776357966266806995, guid: c8f5ae67ef0d41040bdad6aa46bc2f55, type: 3}
 --- !u!1 &4063719076688186148
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,8 +405,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1666393207
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -1425575559, guid: 7c7db348c28a5428a929ef8a8f306056, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -581,3 +597,34 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 978357750994770774}
+--- !u!1 &7184272100853621047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4188147804768247985}
+  m_Layer: 0
+  m_Name: Hold Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4188147804768247985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7184272100853621047}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0121, y: 0.1181, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4991376849108094972}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

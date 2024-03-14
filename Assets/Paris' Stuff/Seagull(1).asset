@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 928
-    y: 285
+    x: 794
+    y: 96
     width: 190
     height: 135
   isDragging: 0
@@ -46,8 +46,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 500.3333
-    y: 285.99997
+    x: 366.3333
+    y: 96.99997
     width: 190
     height: 135
   isDragging: 0
@@ -76,8 +76,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1525
-    y: 472
+    x: 1391
+    y: 283
     width: 190
     height: 135
   isDragging: 0
@@ -106,8 +106,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 287.6667
-    y: 283.99997
+    x: 153.66669
+    y: 94.99997
     width: 190
     height: 135
   isDragging: 0
@@ -136,8 +136,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1531
-    y: 297
+    x: 1397
+    y: 108
     width: 190
     height: 135
   isDragging: 0
@@ -166,8 +166,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1143
-    y: 295
+    x: 1009
+    y: 106
     width: 190
     height: 135
   isDragging: 0
@@ -196,8 +196,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 715.3334
-    y: 285.66666
+    x: 581.3334
+    y: 96.66666
     width: 190
     height: 135
   isDragging: 0
@@ -251,8 +251,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1335
-    y: 295
+    x: 1201
+    y: 106
     width: 190
     height: 135
   isDragging: 0
@@ -281,8 +281,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1112
-    y: 471
+    x: 978
+    y: 282
     width: 190
     height: 135
   isDragging: 0
@@ -311,15 +311,15 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1323
-    y: 474
+    x: 1186
+    y: 278
     width: 190
     height: 135
   isDragging: 0
   isSelected: 0
   sentence:
     characterName: 
-    text: Then take them to that shiny bucket over there.
+    text: Then take it to that shiny metal container over there.
     characterSprite: {fileID: 0}
   parentNode: {fileID: -4443602367965449674}
   childNode: {fileID: 4603931270136961572}

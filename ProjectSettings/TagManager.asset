@@ -44,9 +44,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Characters
+    uniqueID: 2628574089
+    locked: 0
   - name: Dialogue Panel
     uniqueID: 3856194241
     locked: 0
-  - name: Characters
-    uniqueID: 2628574089
+  - name: Text
+    uniqueID: 1672277781
     locked: 0
