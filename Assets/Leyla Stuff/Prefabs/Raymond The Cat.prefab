@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9a861f3bd4f413cbe76f239ab619c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  initialMoveSpeed: 1
 --- !u!50 &6740373716159829541
 Rigidbody2D:
   serializedVersion: 4
@@ -222,7 +222,7 @@ Transform:
   m_GameObject: {fileID: 3430960714708387775}
   serializedVersion: 2
   m_LocalRotation: {x: 0.15419307, y: -0, z: -0, w: 0.98804075}
-  m_LocalPosition: {x: -0.026206972, y: 2.6499999, z: -7.5491734}
+  m_LocalPosition: {x: 4.3597775, y: 4.96869, z: -5.5244217}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -261,7 +261,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 30
+  field of view: 22.9
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -559,7 +559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9a861f3bd4f413cbe76f239ab619c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  initialMoveSpeed: 10
 --- !u!136 &1266655220142135722
 CapsuleCollider:
   m_ObjectHideFlags: 0
