@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1666393207
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -1099959288, guid: 943c764663ea6fd41a261ae071415c6d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -222,7 +222,7 @@ Transform:
   m_GameObject: {fileID: 3430960714708387775}
   serializedVersion: 2
   m_LocalRotation: {x: 0.15419307, y: -0, z: -0, w: 0.98804075}
-  m_LocalPosition: {x: -0.026206972, y: 2.6500003, z: -7.5491734}
+  m_LocalPosition: {x: -0.026206972, y: 2.6499999, z: -7.5491734}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -493,6 +493,7 @@ GameObject:
   - component: {fileID: 8704607333474547750}
   - component: {fileID: 9145705836387362126}
   - component: {fileID: 1266655220142135722}
+  - component: {fileID: 6258673621850291791}
   m_Layer: 0
   m_Name: Raymond The Cat
   m_TagString: Untagged
@@ -516,6 +517,7 @@ Transform:
   - {fileID: 4550645503856383934}
   - {fileID: 1197846635535282878}
   - {fileID: 948657298605135479}
+  - {fileID: 4799754677245187454}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &8704607333474547750
@@ -581,3 +583,48 @@ CapsuleCollider:
   m_Height: 2.7370741
   m_Direction: 1
   m_Center: {x: 0.18855837, y: -0.1354456, z: 0}
+--- !u!114 &6258673621850291791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6756621158993516065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e3fcdd0402ffad47bed98abacfface9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemHolder: {fileID: 4799754677245187454}
+  depositLocationPrefab: {fileID: 1776357966266806995, guid: c8f5ae67ef0d41040bdad6aa46bc2f55, type: 3}
+--- !u!1 &8814783132365162659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4799754677245187454}
+  m_Layer: 0
+  m_Name: Hold Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4799754677245187454
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8814783132365162659}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.494, y: 1.043, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7270489912595380467}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
