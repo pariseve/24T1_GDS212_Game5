@@ -13,6 +13,7 @@ public class SceneTransitionController : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1f;
         // Get the CanvasGroup component attached to the transitionImage
         canvasGroup = transitionImage.GetComponent<CanvasGroup>();
 
