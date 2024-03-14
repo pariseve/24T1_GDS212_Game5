@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float initialMoveSpeed = 1f; // Initial move speed set in the inspector
+    public float initialMoveSpeed = 5f; // Initial move speed set in the inspector
     private float moveSpeed; // Current move speed
     private Animator[] childAnimators; // Array to hold all Animator components in children
     private Vector3 lastMovementDirection = Vector3.right; // Default direction

@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9a861f3bd4f413cbe76f239ab619c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  initialMoveSpeed: 5
 --- !u!136 &7186874522777001024
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9a861f3bd4f413cbe76f239ab619c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  initialMoveSpeed: 1
 --- !u!50 &7464057194488352279
 Rigidbody2D:
   serializedVersion: 4
