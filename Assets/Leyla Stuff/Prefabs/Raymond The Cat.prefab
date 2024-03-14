@@ -261,7 +261,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 30
+  field of view: 45
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -375,7 +375,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 30
+    FieldOfView: 45
     OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
@@ -597,7 +597,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemHolder: {fileID: 4799754677245187454}
   depositLocationPrefab: {fileID: 1776357966266806995, guid: c8f5ae67ef0d41040bdad6aa46bc2f55, type: 3}
-  allTrashRemoved: {fileID: 3123130739611069922, guid: e949abd0ffd3a564d89298ea433c80a9, type: 3}
 --- !u!1 &8814783132365162659
 GameObject:
   m_ObjectHideFlags: 0
