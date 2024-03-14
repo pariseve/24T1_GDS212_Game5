@@ -50,6 +50,3 @@ TagManager:
   - name: Characters
     uniqueID: 2628574089
     locked: 0
-  - name: Litter
-    uniqueID: 2287098655
-    locked: 0
