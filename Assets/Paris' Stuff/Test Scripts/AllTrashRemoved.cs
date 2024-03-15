@@ -9,6 +9,11 @@ public class AllTrashRemoved : MonoBehaviour
     public DialogNodeGraph dialogGraph;
     public SimpleDialogBehaviour dialogBehaviour;
 
+    private void Start()
+    {
+        isTrashGone = false;
+    }
+
     void Update()
     {
         if (!isTrashGone)
